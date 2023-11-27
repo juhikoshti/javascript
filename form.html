@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form action="">
+        <span>First Name:</span>
+        <input type="text" id="hi" onfocus="success()" required><br><br>
+        <span>Last Name:</span>
+        <input type="text" id="hi1" onfocus="change()" required><br><br>
+        <span>Email</span>
+        <input type="email" id="hi2" onfocus="change1()" required><br><br>
+        <span>Password:</span>
+        <input type="password" id="hi3" onfocus="change2()" required><br><br>
+        <button onclick="alert('Form submited succesfully')">Submit</button>
+    </form>
+</center>
+
+<script>
+    function success()
+    {
+        document.getElementById('hi').style.cssText="height:40px;width:200px;background:blue;border:2px solid red;"
+
+    }
+    function change()
+    {
+        document.getElementById('hi1').style.cssText="height:40px;width:200px;background:yellow;border:2px solid blue;"
+
+    }
+    function change1()
+    {
+        document.getElementById('hi2').style.cssText="height:40px;width:200px;background:lightpink;border:2px solid blue;"
+
+    }
+    function change2()
+    {
+        document.getElementById('hi3').style.cssText="height:40px;width:200px;background:skyblue;border:2px solid blue;"
+
+    }
+</script>
+</body>
+</html>
